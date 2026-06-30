@@ -1,133 +1,101 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — EcomEasy</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-    body{font-family:'Noto Sans',sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6;}
-    a{color:#ff6b00;}
-    header{background:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid #ff6b00;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
-    .logo{font-family:'Baloo 2',sans-serif;font-size:22px;color:#ff6b00;font-weight:800;}
-    .logo span{color:#1a1a2e;}
-    .logo small{display:block;font-size:10px;font-weight:600;color:#64748b;letter-spacing:0.5px;margin-top:-2px;}
-    .back-link{font-size:13px;font-weight:700;color:#ff6b00;text-decoration:none;}
-    .back-link:hover{text-decoration:underline;}
-    main{max-width:720px;margin:0 auto;padding:48px 20px 64px;}
-    .page-tag{display:inline-block;background:#1a1a2e;color:#fbbf24;font-size:12px;font-weight:700;padding:5px 16px;border-radius:20px;letter-spacing:1px;text-transform:uppercase;margin-bottom:12px;}
-    h1{font-family:'Baloo 2',sans-serif;font-size:28px;font-weight:800;color:#1a1a2e;margin-bottom:6px;}
-    .meta{font-size:13px;color:#64748b;margin-bottom:32px;}
-    .card{background:#fff;border-radius:16px;padding:32px 28px;border:1.5px solid #e2e8f0;display:flex;flex-direction:column;gap:24px;}
-    .section-block h3{font-size:15px;font-weight:800;color:#1a1a2e;margin-bottom:8px;}
-    .section-block p{font-size:14px;color:#475569;line-height:1.75;}
-    .section-block ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:8px;margin-top:8px;}
-    .section-block ul li{font-size:14px;color:#475569;display:flex;gap:10px;align-items:flex-start;}
-    .third-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-top:4px;}
-    .third-item{background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:10px;padding:12px 14px;}
-    .third-item .t-title{font-size:13px;font-weight:700;color:#1a1a2e;margin-bottom:4px;}
-    .third-item .t-desc{font-size:12px;color:#64748b;}
-    footer{background:#1a1a2e;color:#94a3b8;text-align:center;padding:28px 20px;font-size:13px;}
-    .footer-links{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:12px;font-size:13px;}
-    .footer-links a{color:#94a3b8;text-decoration:none;}
-    .footer-links a:hover{color:#fbbf24;}
-    @media(max-width:600px){main{padding:32px 16px 56px;}.card{padding:20px 16px;}.third-grid{grid-template-columns:1fr 1fr;}}
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — ecomeasy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg:#f7f5ef; --surface:#ffffff; --ink:#16241d; --muted:#647167; --border:#e1ddd0;
+    --teal-950:#0a2620; --teal-900:#0d3b2e; --teal-700:#1d5c47; --teal-50:#f1f7f3;
+    --gold:#c9952d; --gold-dark:#a87a1f; --gold-light:#f3e2b3;
+    --radius:16px; --shadow:0 6px 24px rgba(13,59,46,.08);
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:'Noto Sans',sans-serif; background:var(--bg); color:var(--ink); line-height:1.7; }
+  h1,h2 { font-family:'Space Grotesk',sans-serif; }
+  header { background:var(--surface); padding:14px 24px; border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; }
+  .logo { font-size:18px; font-weight:700; color:var(--teal-900); }
+  .logo span { color:var(--gold-dark); }
+  .back { font-size:13px; font-weight:700; color:var(--teal-700); text-decoration:none; }
+  .hero { background:var(--teal-950); color:#fff; padding:48px 24px; text-align:center; }
+  .eyebrow { display:inline-flex; align-items:center; gap:7px; font-size:11.5px; font-weight:700; letter-spacing:.07em; text-transform:uppercase; color:var(--gold-light); }
+  .eyebrow::before { content:''; width:16px; height:2px; background:var(--gold-light); }
+  .hero h1 { font-size:clamp(24px,4vw,34px); margin-top:12px; }
+  .hero p { color:#cfe3da; font-size:13px; margin-top:8px; }
+  section { padding:48px 24px; }
+  .container { max-width:760px; margin:0 auto; }
+  .card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:28px; box-shadow:var(--shadow); }
+  .card h2 { font-size:16.5px; color:var(--teal-900); margin:18px 0 8px; }
+  .card h2:first-child { margin-top:0; }
+  .card p, .card li { font-size:14px; color:var(--ink); margin-bottom:8px; }
+  .card ul { padding-left:20px; }
+  footer { background:var(--teal-950); color:#9fc2b3; text-align:center; padding:30px 20px; font-size:12.5px; }
+  footer a { color:var(--gold-light); text-decoration:none; }
+</style>
 </head>
 <body>
-
 <header>
-  <div class="logo">ECOMEASY<span>TOOL</span><small>ecomeasy.store</small></div>
-  <a href="/" class="back-link">← Wapas Jao</a>
+  <div class="logo">ECOMEASY<span>COURSE</span></div>
+  <a href="index.html" class="back">← Home par jaayein</a>
 </header>
 
-<main>
-  <span class="page-tag">Privacy</span>
+<div class="hero">
+  <span class="eyebrow">Legal</span>
   <h1>Privacy Policy</h1>
-  <p class="meta">Last updated: June 2026 &nbsp;·&nbsp; ecomeasy.store</p>
+  <p>Last updated: June 30, 2026</p>
+</div>
 
-  <div class="card">
+<section>
+  <div class="container">
+    <div class="card">
+      <p>ecomeasy ("hum", "humara") aapki privacy ki respect karta hai. Yeh Privacy Policy batati hai ki hum kaunsi information collect karte hain, kaise use karte hain, aur kaise protect karte hain jab aap hamari website use karte hain ya course purchase karte hain.</p>
 
-    <div class="section-block">
-      <h3>1. Data Controller</h3>
-      <p>
-        <strong>JITENDER KUMAR</strong> (trading as EcomEasy)<br>
-        S-52, Budhvihar Phase 1, New Delhi – 110086, India<br>
-        📧 <a href="mailto:yashsethi733@gmail.com">yashsethi733@gmail.com</a> &nbsp;·&nbsp;
-        📞 <a href="tel:+918595735564">+91 85957 35564</a>
-      </p>
-    </div>
-
-    <div class="section-block">
-      <h3>2. What Data We Collect</h3>
+      <h2>1. Hum Kya Information Collect Karte Hain</h2>
       <ul>
-        <li><span style="color:#ff6b00;">•</span><span><strong>Contact info:</strong> Name, email address, phone number (if provided voluntarily at checkout or WhatsApp)</span></li>
-        <li><span style="color:#ff6b00;">•</span><span><strong>Payment info:</strong> Transaction ID from our payment partner (we do NOT store card/UPI details)</span></li>
-        <li><span style="color:#ff6b00;">•</span><span><strong>Usage data:</strong> Page views, clicks, session data via Google Analytics (GA4) and Meta Pixel for ad performance tracking</span></li>
-        <li><span style="color:#ff6b00;">•</span><span><strong>Device/browser info:</strong> IP address, browser type, OS (collected automatically by analytics tools)</span></li>
+        <li>Naam, Email ID, Phone/WhatsApp number (course delivery ke liye)</li>
+        <li>Payment-related details (third-party payment gateway ke through process hoti hain, hum card/UPI details store nahi karte)</li>
+        <li>Website usage data jaise browser type, device, pages visited (analytics ke liye)</li>
       </ul>
-    </div>
 
-    <div class="section-block">
-      <h3>3. How We Use Your Data</h3>
+      <h2>2. Information Kaise Use Hoti Hai</h2>
       <ul>
-        <li><span style="color:#16a34a;">✓</span><span>Purchase ka product deliver karna (WhatsApp/email)</span></li>
-        <li><span style="color:#16a34a;">✓</span><span>Customer support aur refund process karna</span></li>
-        <li><span style="color:#16a34a;">✓</span><span>Ad campaign optimize karna (Meta Pixel / GA4 conversions)</span></li>
-        <li><span style="color:#16a34a;">✓</span><span>Product updates ya important announcements bhejne ke liye (opt-in only)</span></li>
+        <li>Course access aur delivery ke liye (Email/WhatsApp par link bhejne ke liye)</li>
+        <li>Customer support aur doubt resolution ke liye</li>
+        <li>Offers, updates, ya course-related communication bhejne ke liye</li>
       </ul>
-      <p style="margin-top:10px;">Hum aapka data <strong>kabhi bhi third parties ko sell nahi karte</strong>. Analytics tools (Google, Meta) ki apni privacy policies hain jinhe hum control nahi karte.</p>
-    </div>
 
-    <div class="section-block">
-      <h3>4. Third-Party Services Used</h3>
-      <div class="third-grid">
-        <div class="third-item"><div class="t-title">🔒 Razorpay</div><div class="t-desc">Payment processing (encrypted &amp; secure)</div></div>
-        <div class="third-item"><div class="t-title">📊 Google Analytics</div><div class="t-desc">Website traffic &amp; behavior analytics</div></div>
-        <div class="third-item"><div class="t-title">📣 Meta Pixel</div><div class="t-desc">Facebook/Instagram ad conversion tracking</div></div>
-        <div class="third-item"><div class="t-title">💬 WhatsApp</div><div class="t-desc">Product delivery &amp; customer support</div></div>
-      </div>
-    </div>
+      <h2>3. Information Share Karna</h2>
+      <p>Hum aapki personal information kisi third party ko bechte nahi hain. Information sirf payment processing (payment gateway partner) aur service delivery ke liye trusted partners ke saath share ki jaati hai, jaise zaroori ho.</p>
 
-    <div class="section-block">
-      <h3>5. Cookies</h3>
-      <p>Ye website cookies use karti hai analytics aur ad tracking ke liye (Google, Meta). Browser settings se aap cookies disable kar sakte ho, lekin kuch features affect ho sakte hain.</p>
-    </div>
+      <h2>4. Data Security</h2>
+      <p>Hum reasonable technical aur organizational measures use karte hain aapki information protect karne ke liye. Lekin koi bhi online transmission 100% secure nahi hota, isliye hum absolute security guarantee nahi de sakte.</p>
 
-    <div class="section-block">
-      <h3>6. Data Retention</h3>
-      <p>Customer data sirf jitne zaroorat ho utne time ke liye store hoti hai — typically jab tak purchase record active hai ya legal requirement hai. WhatsApp conversations Meta ke servers pe store hoti hain unki privacy policy ke anusaar.</p>
-    </div>
+      <h2>5. Cookies</h2>
+      <p>Website better experience dene ke liye cookies use kar sakti hai, jaise analytics ke liye. Aap apne browser settings se cookies disable kar sakte hain.</p>
 
-    <div class="section-block">
-      <h3>7. Your Rights</h3>
-      <p>Aap kisi bhi time apna data access, correct ya delete karne ki request kar sakte ho. Iske liye email karo: <a href="mailto:yashsethi733@gmail.com" style="color:#ff6b00;font-weight:700;">yashsethi733@gmail.com</a>. Hum 30 din mein respond karenge.</p>
-    </div>
+      <h2>6. Aapke Rights</h2>
+      <ul>
+        <li>Apni personal information dekhne, update karne, ya delete karwane ka request kar sakte hain</li>
+        <li>Marketing communication se opt-out kar sakte hain</li>
+      </ul>
 
-    <div class="section-block">
-      <h3>8. Changes to This Policy</h3>
-      <p>Hum is policy ko kisi bhi time update kar sakte hain. Major changes ke liye hum WhatsApp ya email pe notify karenge. Latest version hamesha ecomeasy.store pe available rahegi.</p>
-    </div>
+      <h2>7. Children's Privacy</h2>
+      <p>Hamari services 18 saal se kam umar ke individuals ke liye nahi banayi gayi hain.</p>
 
+      <h2>8. Policy Mein Changes</h2>
+      <p>Hum is Privacy Policy ko time-to-time update kar sakte hain. Latest version hamesha website par available rahega.</p>
+
+      <h2>9. Contact Us</h2>
+      <p>Privacy se related kisi bhi sawaal ke liye: <a href="https://wa.me/918595735564" style="color:var(--teal-700);font-weight:700;">+91 85957 35564</a></p>
+    </div>
   </div>
-</main>
+</section>
 
 <footer>
-  <div class="footer-links">
-    <a href="/terms">Terms &amp; Conditions</a>
-    <span style="color:#334155;">|</span>
-    <a href="/refund">Refund Policy</a>
-    <span style="color:#334155;">|</span>
-    <a href="/cancellation">Cancellation Policy</a>
-    <span style="color:#334155;">|</span>
-    <a href="/privacy">Privacy Policy</a>
-    <span style="color:#334155;">|</span>
-    <a href="/about">About Us</a>
-  </div>
-  <p>© 2026 EcomEasy · <a href="https://ecomeasy.store" style="color:#fbbf24;">ecomeasy.store</a> · JITENDER KUMAR, New Delhi</p>
+  <p>© 2026 ecomeasy. All rights reserved.</p>
 </footer>
-
 </body>
 </html>
